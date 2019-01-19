@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="nesne_hw1_gui:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/nesne_hw1_gui_jar</output-path>
+    <root id="archive" name="nesne_hw1_gui.jar">
+      <element id="module-output" name="nesne_hw2_part2_gui" />
+    </root>
+  </artifact>
+</component>

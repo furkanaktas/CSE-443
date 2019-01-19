@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.16112084063047286" layoutX="14.0" layoutY="14.0" orientation="VERTICAL" prefHeight="573.0" prefWidth="773.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="596.0">
+               <children>
+                  <Label layoutX="71.0" layoutY="31.0" prefHeight="26.0" prefWidth="196.0" text="Zırh tipi seçiniz">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <ComboBox fx:id="suitTypeCombo" layoutX="489.0" layoutY="31.0" prefHeight="26.0" prefWidth="165.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="53.0" prefHeight="26.0" prefWidth="120.0" text="FlameThrower" />
+                  <Label layoutX="65.0" layoutY="91.0" prefHeight="26.0" prefWidth="120.0" text="AutoRifle" />
+                  <Label layoutX="65.0" layoutY="127.0" prefHeight="26.0" prefWidth="120.0" text="RocketLauncher" />
+                  <TextField fx:id="flame" layoutX="185.0" layoutY="53.0" prefHeight="26.0" prefWidth="67.0" />
+                  <TextField fx:id="rifle" layoutX="185.0" layoutY="91.0" prefHeight="26.0" prefWidth="67.0" />
+                  <TextField fx:id="rocket" layoutX="185.0" layoutY="128.0" prefHeight="26.0" prefWidth="67.0" />
+                  <Label layoutX="65.0" layoutY="165.0" prefHeight="26.0" prefWidth="120.0" text="Laser" />
+                  <TextField fx:id="laser" layoutX="185.0" layoutY="166.0" prefHeight="26.0" prefWidth="67.0" />
+                  <Button fx:id="getResult" layoutX="183.0" layoutY="288.0" mnemonicParsing="false" onAction="#getResult" prefHeight="88.0" prefWidth="405.0" text="Zırh Verilerini Hesapla">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Button>
+                  <TextArea fx:id="resultArea" layoutX="412.0" layoutY="47.0" prefHeight="145.0" prefWidth="268.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

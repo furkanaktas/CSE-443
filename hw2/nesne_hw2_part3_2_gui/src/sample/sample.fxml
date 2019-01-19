@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="create" layoutX="284.0" layoutY="178.0" mnemonicParsing="false" onAction="#create" prefHeight="84.0" prefWidth="233.0" text="Üret">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="planeTypeCombo" layoutX="479.0" layoutY="119.0" prefHeight="35.0" prefWidth="122.0" />
+        <TextArea fx:id="resultArea" layoutX="231.0" layoutY="310.0" prefHeight="200.0" prefWidth="339.0" />
+        <Label layoutX="472.0" layoutY="66.0" prefHeight="35.0" prefWidth="136.0" text="Uçak Tipi Seçiniz">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+      <ComboBox fx:id="marketCombo" layoutX="184.0" layoutY="119.0" prefHeight="35.0" prefWidth="122.0" />
+      <Label layoutX="177.0" layoutY="66.0" prefHeight="35.0" prefWidth="136.0" text="Market Seçiniz">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
